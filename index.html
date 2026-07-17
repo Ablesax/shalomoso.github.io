@@ -76,7 +76,7 @@
     max-width:var(--maxw); margin:0 auto; padding:16px 28px;
     display:flex; align-items:center; justify-content:space-between;
   }
-  .logo{
+.logo{
     font-family:'IBM Plex Mono', monospace;
     font-weight:600; font-size:0.95rem;
     letter-spacing:0.02em;
@@ -84,6 +84,10 @@
     text-decoration:none;
   }
   .logo .dot{ color:var(--gold); }
+  .logo-photo{
+    width:32px; height:32px; border-radius:50%;
+    object-fit:cover; border:1px solid var(--line-strong);
+  }
   nav.links{ display:flex; gap:28px; }
   nav.links a{
     font-size:0.88rem; text-decoration:none; color:var(--muted);
@@ -280,7 +284,7 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <a class="logo" href="#top">SO<span class="dot">.</span>DEV</a>
+    <a class="logo" href="#top"><img class="logo-photo" src="assets/shalom-photo.jpg" alt="Shalom Oso">SO<span class="dot">.</span>DEV</a>
     <nav class="links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -306,7 +310,7 @@
     </div>
     <div class="hero-card">
       <div class="tl"><span>~/shalom-oso</span><span>main</span></div>
-      <div class="hero-avatar">SO</div>
+      <img class="hero-avatar" src="assets/shalom-photo.jpg" alt="Shalom Oso">
       <h3>Oso Shalom Oluwafikayomi</h3>
       <div class="role">Software Engineer · ML Researcher</div>
       <div class="stats">
